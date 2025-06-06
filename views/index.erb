@@ -5,10 +5,13 @@
 	 	<%= post['content'] %>
 		<br>
 		<br>
+	 	Author: <%= post['author'] %>
+		<br>
+		<br>
 	 	Added at <%= post['created_date'] %>
 		<br>
 		<br>
 		<a href="/post/<%= post['ID'] %>">Comments</a>
-	</p>			
+	</p>				
 	<hr>
 <% end %>
