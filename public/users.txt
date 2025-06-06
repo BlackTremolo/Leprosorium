@@ -1,6 +1,0 @@
-User name:Сергей, Phone:12345, Date and time:24.05 18.00
-User name:Лена, Phone:123213123, Date and time:24.05 18.25User name:Лена, Phone:123213123, Date and time:24.05 18.25
-User name:Mihser, Phone:147258, Date and time:24.05 18.00, Hairdresser:Walter White
-User name:Mihser, Phone:147258, Date and time:24.05 18.00, Hairdresser:Walter White
-User name:ivan, Phone:1111, Date and time:30.05 , Hairdresser:Walter White
-User name:ivan, Phone:1111, Date and time:30.05 , Hairdresser:Walter White
