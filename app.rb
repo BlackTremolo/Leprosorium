@@ -34,7 +34,7 @@ end
 
 # обработчик get запроса /new
 get '/new' do
-  erb :new
+  	erb :new
 end
 
 # обработчик post запроса /new
@@ -42,11 +42,13 @@ post '/new' do
   
   	content = params[:content]
 
+	# проверка на пустое поле
   	if content.length <= 0 
   		@error = 'Type text'
   		return erb :new
 	end
-
+	
+	# сохранение данных в БД
 	@db.execute 'insert into Posts (content, created_date) values (?, datetime ())', [content]
 
 	erb "You tiped #{content}"
