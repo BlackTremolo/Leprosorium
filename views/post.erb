@@ -7,6 +7,7 @@
  	Added at <%= @row['created_date'] %>
 </p>			
 <br>
+
 <h4>Comments:</h4>
 <br>
 <form action="/post/<%= @row['ID'] %>" method="POST">
@@ -14,3 +15,14 @@
 	<br>
 	<button type="submit" class="btn btn-primary">Add comment</button>
 </form>
+<br>
+
+<%@comments.each do |comment|%>
+<p>
+ 	<%= comment['content'] %>
+	<br>
+	<br>
+ 	<span style="font-size: 75%; color: #999">Added at <%= comment['created_date'] %></span>
+ 	<hr>
+</p>			
+<%end%>

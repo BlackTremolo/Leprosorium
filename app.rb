@@ -70,6 +70,8 @@ get '/post/:post_id' do
 	@results = @db.execute 'select * from Posts where ID = ?', [post_id]
 	@row = @results[0]
 
+	@comments = @db.execute 'select * from Comments where post_id = ? order by id',[post_id]
+	@com = @comments[0]
 	erb :post
 end
 
