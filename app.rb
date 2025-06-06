@@ -9,3 +9,11 @@ end
 get '/new' do
   erb :new
 end
+
+
+post '/new' do
+  
+  	@text = params[:text]
+
+	erb "You tiped #{@text}"
+end
