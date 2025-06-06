@@ -40,7 +40,12 @@ end
 # обработчик post запроса /new
 post '/new' do
   
-  	text = params[:text]
+  	content = params[:content]
 
-	erb "You tiped #{text}"
+  	if content.length <= 0 
+  		@error = 'Type text'
+  		return erb :new
+	end
+
+	erb "You tiped #{content}"
 end
